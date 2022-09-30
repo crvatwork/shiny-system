@@ -1,0 +1,29 @@
+# on: push
+# jobs:
+#   artifacts:
+#     name: Generate artifacts and build documentation
+#     runs-on: ubuntu-22.04
+#     steps:
+#     - name: Check out code
+#       uses: actions/checkout@v2
+    
+#     - name: Install needed pre-reqs
+#       run: |
+#         sudo apt update && sudo apt upgrade -y
+#         sudo apt install pandoc texlive-xetex
+#         python3 -m pip install --user -r requirements.txt
+#         playwright install
+
+#     - name: generate screenshot and annotate
+#       run: python3 artifact.py
+
+#     - name: build documentation
+#       run: pandoc blog.md --pdf-engine=xelatex -o blog.pdf
+    
+#     - name: Archive artifacts
+#       uses: actions/upload-artifact@v3
+#       with:
+#         name: Post and images
+#         path: |
+#           blog.pdf
+#           *.png
