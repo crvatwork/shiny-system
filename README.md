@@ -10,3 +10,5 @@ If you are logged in to a GitHub account you can see the generated documentation
 
 3. Finally click on the "Post and Images" link under artifacts to download a zip file.
 ![actions](repo-assets/Zv5e3d6Kbh.png)
+
+©2022 CDW LLC
